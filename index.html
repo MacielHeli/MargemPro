@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt- br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MargemPro</title>
+    <link rel="stylesheet" href="style.css">
+<script src="cal.js"></script>
+</head>
+
+<body>
+   <div class="container">
+
+<div class="add-area">
+ <h1> MargemPro</h1>
+<h3>Insira Valores</h3> 
+
+
+
+
+<input type="number" step="0.01" id="valor_produto" placeholder="Valor do Produto R$" > 
+
+<input type="number" step="0.01" id="valor_embalagem" placeholder=" Custo Embalagem R$">
+
+
+<input type="number" step="0.01" id="valor_fixo" placeholder="Taxa Fixa R$">
+
+
+<input type="number" step="0.01" id="valor_comissao" placeholder="Taxa comissão (%)">
+
+
+<input type="number" step="0.01" id="valor_desconto" placeholder="CUPOM desconto (%)">
+
+
+<input type="number" step="0.01" id="valor_afiliado" placeholder="Taxa Afiliado (%)">
+
+
+<input type="number" step="0.01" id="valor_impostos" placeholder="Impostos (%)" > 
+
+<h4><input type="number" step="0.01" id="porcent_Venda" placeholder="Percentual de Venda (%)"></h4>
+
+
+
+<button class="calcBtn" onclick="calcular()">Calcular preço</button>
+<button class="calcBtn" onclick="limpar()">Limpar</button>
+
+<div class="resultado">
+
+<p>Preço venda: R$ <span id="Venda">0</span></p>
+<p>Lucro líquido: R$ <span id="lucro">0</span></p>
+<!--<p>Margem Líquida: <span id="custoTotal">0</span>%</p>-->
+
+
+</div>
+
+</div>
+
+
+    
+</body>
+</html>
